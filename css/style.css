@@ -1,0 +1,20 @@
+/* 
+універсальний - *
+тега - a
+id - #hero-header
+class - .header-btn
+атрибут - [type], [type='button']
+дочірній - .header-logo > img
+нащадка - .header a
+*/
+:root {
+  --main-color: #ccc;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  color: var(--main-color);
+}
