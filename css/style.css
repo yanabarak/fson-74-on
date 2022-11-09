@@ -1,20 +1,131 @@
-/* 
-універсальний - *
-тега - a
-id - #hero-header
-class - .header-btn
-атрибут - [type], [type='button']
-дочірній - .header-logo > img
-нащадка - .header a
-*/
 :root {
-  --main-color: #ccc;
+  --primary-color: #303030;
+  --second-color: #ffffff;
+  --accent-color: #ff6c00;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
-  color: var(--main-color);
 }
+/* -----------HEADER----------- */
+header {
+  background-color: gray;
+}
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header-btn:hover,
+.header-btn:focus {
+  background-color: #ff6c00;
+}
+
+/* -----------HERO----------- */
+.hero {
+  background-color: #737373;
+}
+.sub-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.hero-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.hero-links {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-links:hover,
+.hero-links:focus {
+  color: #ff6c00;
+}
+
+/* -----------ABOUT----------- */
+
+.about-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
+}
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.about-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+.about-btn:hover,
+.about-btn:focus {
+  background-color: #ff6c00;
+}
+
+/* ----------- ----------- */
