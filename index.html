@@ -31,8 +31,10 @@
                     <li><a href="" class="header-link link">Contacts</a></li>
                 </ul>
             </nav>
-            <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-            <button type="button" class="header-btn btn">Online-booking</button>
+            <div class="header-cont">
+                <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+                <button type="button" class="header-btn btn">Online-booking</button>
+            </div>
         </div>
     </header>
     <main>
@@ -56,63 +58,67 @@
                     <li class="about-items"><img src="./img/img_1.jpg" alt="barbershop cuts hair"></li>
                     <li class="about-items"><img src="./img/img_2.jpg" alt="barbershop works"></li>
                 </ul>
-
-                <p class="about-pre-title pre-title">About</p>
-                <h2 class="about-title title">Best Barbershop in your city</h2>
-                <p class="about-after-title after-title">If you want to add more confidence to your image, you should
-                    definitely visit
-                    us.</p>
-                <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for
-                    changes.
-                    And when you fall
-                    into the hands
-                    of our master, you will never be the same again. We are a team that is always "on the same wave"
-                    with
-                    clients.
-                    Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+                <div class="about-wrap">
+                    <p class="about-pre-title pre-title">About</p>
+                    <h2 class="about-title title">Best Barbershop in your city</h2>
+                    <p class="about-after-title after-title">If you want to add more confidence to your image, you
+                        should
+                        definitely visit
+                        us.</p>
+                    <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for
+                        changes.
+                        And when you fall
+                        into the hands
+                        of our master, you will never be the same again. We are a team that is always "on the same wave"
+                        with
+                        clients.
+                        Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+                </div>
             </div>
         </section>
         <section class="prices">
             <div class="container">
                 <p class="prices-pre-title pre-title">Spend your time with the best masters</p>
                 <h2 class="prices-title title">Services and prices</h2>
-                <ul class="prices-list list">
-                    <li class="prices-items">
-                        <p class="prices-elem">Men’s haircut</p>
-                        <p class="prices-elem">from 300 uah.</p>
-                    </li>
-                    <li class="prices-items">
-                        <p class="prices-elem">Beard trim</p>
-                        <p class="prices-elem">from 300 uah.</p>
-                    </li>
-                    <li class="prices-items">
-                        <p class="prices-elem">Mustache trim</p>
-                        <p class="prices-elem">from 200 uah.</p>
-                    </li>
-                    <li class="prices-items">
-                        <p class="prices-elem">Straight razor shave</p>
-                        <p class="prices-elem">from 200 uah.</p>
-                    </li>
-                </ul>
-                <ul class="prices-list list">
-                    <li class="prices-items">
-                        <p class="prices-elem">Men’s haircut</p>
-                        <p class="prices-elem">from 300 uah.</p>
-                    </li>
-                    <li class="prices-items">
-                        <p class="prices-elem">Beard trim</p>
-                        <p class="prices-elem">from 300 uah.</p>
-                    </li>
-                    <li class="prices-items">
-                        <p class="prices-elem">Mustache trim</p>
-                        <p class="prices-elem">from 200 uah.</p>
-                    </li>
-                    <li class="prices-items">
-                        <p class="prices-elem">Straight razor shave</p>
-                        <p class="prices-elem">from 200 uah.</p>
-                    </li>
-                </ul><button type="button" class="prices-btn btn">Online-booking</button>
+                <div class="prices-list-wrap">
+                    <ul class="prices-list list">
+                        <li class="prices-items">
+                            <p class="prices-elem">Men’s haircut</p>
+                            <p class="prices-elem">from 300 uah.</p>
+                        </li>
+                        <li class="prices-items">
+                            <p class="prices-elem">Beard trim</p>
+                            <p class="prices-elem">from 300 uah.</p>
+                        </li>
+                        <li class="prices-items">
+                            <p class="prices-elem">Mustache trim</p>
+                            <p class="prices-elem">from 200 uah.</p>
+                        </li>
+                        <li class="prices-items">
+                            <p class="prices-elem">Straight razor shave</p>
+                            <p class="prices-elem">from 200 uah.</p>
+                        </li>
+                    </ul>
+                    <ul class="prices-list list">
+                        <li class="prices-items">
+                            <p class="prices-elem">Men’s haircut</p>
+                            <p class="prices-elem">from 300 uah.</p>
+                        </li>
+                        <li class="prices-items">
+                            <p class="prices-elem">Beard trim</p>
+                            <p class="prices-elem">from 300 uah.</p>
+                        </li>
+                        <li class="prices-items">
+                            <p class="prices-elem">Mustache trim</p>
+                            <p class="prices-elem">from 200 uah.</p>
+                        </li>
+                        <li class="prices-items">
+                            <p class="prices-elem">Straight razor shave</p>
+                            <p class="prices-elem">from 200 uah.</p>
+                        </li>
+                    </ul>
+                </div><button type="button" class="prices-btn btn">Online-booking</button>
             </div>
         </section>
         <section class="benefits">
@@ -171,10 +177,14 @@
                 <p class="gallery-pre-title pre-title">In Latin, "barba" means "beard"</p>
                 <h2 class="visually-hidden title">Gallery</h2>
                 <ul class="gallery-list list">
-                    <li><img src="./img/gallery_img_1.jpg" alt="gallery image" width="270" height="360"></li>
-                    <li><img src="./img/gallery_img_2.jpg" alt="gallery image" width="270" height="360"></li>
-                    <li><img src="./img/gallery_img_3.jpg" alt="gallery image" width="270" height="360"></li>
-                    <li><img src="./img/gallery_img_4.jpg" alt="gallery image" width="270" height="360"></li>
+                    <li class="gallery-item"><img src="./img/gallery_img_1.jpg" alt="gallery image" width="270"
+                            height="360"></li>
+                    <li class="gallery-item"><img src="./img/gallery_img_2.jpg" alt="gallery image" width="270"
+                            height="360"></li>
+                    <li class="gallery-item"><img src="./img/gallery_img_3.jpg" alt="gallery image" width="270"
+                            height="360"></li>
+                    <li class="gallery-item"><img src="./img/gallery_img_4.jpg" alt="gallery image" width="270"
+                            height="360"></li>
                 </ul>
             </div>
         </section>
