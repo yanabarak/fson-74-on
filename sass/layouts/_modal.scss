@@ -1,0 +1,164 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(157, 164, 189, 0.62);
+  transition: opacity 500ms, visibility 500ms;
+  &.is-hidden .modal {
+    transform: scale(0.5);
+  }
+}
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms;
+  padding: 35px;
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #999999;
+  background-color: transparent;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.is-hidden {
+  opacity: 0.5;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal-heading {
+  font-size: 24px;
+  color: #191c26;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.modal-input,
+.modal-select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  color: #303030;
+  font-size: 14px;
+  transition: border-color 500ms linear;
+  &:required {
+    border-color: violet;
+  }
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+    outline: transparent;
+    & + svg {
+      fill: var(--accent-color);
+    }
+  }
+  &::placeholder {
+    color: var(--accent-color);
+    font-weight: 700;
+  }
+  &:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(0, 255, 0, 0.2);
+  }
+  &:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+}
+
+.modal-input-group {
+  margin-bottom: 10px;
+  & label {
+    color: #191c26;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.modal-text {
+  width: 100%;
+  height: 140px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  color: #303030;
+  font-size: 14px;
+  resize: vertical;
+  max-height: 250px;
+  padding: 10px;
+}
+input[type='radio']:checked + label {
+  background-color: var(--accent-color);
+}
+.modal-input-wrapper {
+  position: relative;
+}
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 500ms linear;
+}
+.modal-label-wrapper {
+  position: relative;
+  & span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  & svg {
+    top: 66px;
+  }
+}
+/* .modal-politic-label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  margin-right: 10px;
+} */
+/* .modal-politic-check:checked + label::before {
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url('../img/check.svg');
+  background-position: center;
+  background-color: var(--accent-color);
+} */
+label.modal-politic-label {
+  @extend %flex-align;
+}
+.modal-politic-check2 {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  margin-right: 10px;
+  justify-content: center;
+  @extend %flex-align;
+  cursor: pointer;
+  & svg {
+    fill: transparent;
+  }
+}
+.modal-politic-check:checked + label > span {
+  border: none;
+  background-color: var(--accent-color);
+}
+.modal-politic-check:checked + label > span svg {
+  fill: #fff;
+}

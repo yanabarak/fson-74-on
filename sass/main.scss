@@ -1,0 +1,24 @@
+@import './base/reset';
+@import './base/common';
+@import './base/hidden';
+
+@import './utils/vars';
+@import './utils/placeholder';
+@import './utils/mixin';
+
+@import './components/container';
+@import './components/btn';
+@import './components/pre-title';
+@import './components/title';
+@import './components/after-title';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/prices';
+@import './layouts/benefits';
+@import './layouts/barbers';
+@import './layouts/gallery';
+@import './layouts/contact';
+@import './layouts/footer';
+@import './layouts/modal';

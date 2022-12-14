@@ -1,0 +1,20 @@
+.pre-title {
+  @include font(11, 600, 15, null);
+  text-transform: uppercase;
+
+  @extend %flex-align;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+    margin-right: 20px;
+  }
+}
+.pre-title--light-color {
+  color: rgba(157, 164, 189, 0.6);
+}
+.pre-title--dark-color {
+  color: #303030;
+}

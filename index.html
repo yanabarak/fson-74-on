@@ -14,61 +14,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <a href="" class="header-logo">
+            <a href="" class="logo header__logo">
                 <img src="./img/logo.svg" alt="header logo">
             </a>
-            <nav class="header-nav">
-                <ul class="header-list list">
-                    <li><a href="./about.html" class="header-link link">About</a></li>
-                    <li><a href="" class="header-link link">Services and prices</a></li>
-                    <li><a href="" class="header-link link">Barbers</a></li>
-                    <li><a href="" class="header-link link">Contacts</a></li>
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li><a href="./about.html" class="navigation__link link">About</a></li>
+                    <li><a href="" class="navigation__link link">Services and prices</a></li>
+                    <li><a href="" class="navigation__link link">Barbers</a></li>
+                    <li><a href="" class="navigation__link link">Contacts</a></li>
                 </ul>
             </nav>
-            <div class="header-cont">
-                <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-                <button type="button" class="header-btn btn" data-modal-open>Online-booking</button>
+            <div class="connection">
+                <a href="tel:+380441111111" class="connection__tel link">+38 044 111 11 11</a>
+                <button type="button" class="connection__btn btn" data-modal-open>Online-booking</button>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
-
-                <div class="hero-social-box">
-                    <ul class="hero-list list">
-                        <li><a href="" rel="noopener noreferrer nofollow" class="hero-links link">Instagram</a></li>
-                        <li><a href="" rel="noopener noreferrer nofollow" class="hero-links link">Youtube</a></li>
+                <div class="social-link">
+                    <ul class="social-link__list list">
+                        <li><a href="" rel="noopener noreferrer nofollow" class="social-link__links link">Instagram</a>
+                        </li>
+                        <li><a href="" rel="noopener noreferrer nofollow" class="social-link__links link">Youtube</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="hero-right">
-                    <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-                    <h1 class="hero-title title">BarberShop</h1>
-                    <p class="hero-text">We are experts in trendy men’s haircuts.
+                <div class="combination">
+                    <p class="combination__pre-title pre-title pre-title--light-color">A hair salon for men in Kyiv</p>
+                    <h1 class="combination__title title">BarberShop</h1>
+                    <p class="combination__text">We are experts in trendy men’s haircuts.
                         We work quickly, carefully and with style.</p>
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="container">
-                <ul class="list-about list">
-                    <li class="about-items"><img src="./img/img_1.jpg" alt="barbershop cuts hair"></li>
-                    <li class="about-items"><img src="./img/img_2.jpg" alt="barbershop works"></li>
+                <ul class="picture-list list">
+                    <li class="picture-list__items"><img src="./img/img_1.jpg" alt="barbershop cuts hair"></li>
+                    <li class="picture-list__items"><img src="./img/img_2.jpg" alt="barbershop works"></li>
                 </ul>
-                <div class="about-wrap">
-                    <p class="about-pre-title pre-title">About</p>
+                <div class="elements-wrap about__elements-wrap">
+                    <p class="elements-wrap__pre-title pre-title pre-title--dark-color">About</p>
                     <h2 class="about-title title">Best Barbershop in your city</h2>
-                    <p class="about-after-title after-title">If you want to add more confidence to your image, you
+                    <p class="elements-wrap__after-title after-title">If you want to add more confidence to your image,
+                        you
                         should
                         definitely visit
                         us.</p>
-                    <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for
+                    <p class="elements-wrap__text">We are a team that never stops at what has been achieved and are
+                        thirsty for
                         changes.
                         And when you fall
                         into the hands
@@ -76,7 +79,7 @@
                         with
                         clients.
                         Therefore, we are always ready to improve everyone who comes to us!</p>
-                    <button type="button" class="about-btn btn" data-modal-open>ONLINE-BOOKING</button>
+                    <button type="button" class="elements-wrap__btn btn" data-modal-open>ONLINE-BOOKING</button>
                 </div>
             </div>
         </section>
@@ -159,80 +162,79 @@
         </section>
         <section class="barbers">
             <div class="container">
-                <p class="barbers-pre-title pre-title">For true enjoyers of the atmosphere</p>
-                <h2 class="barbers-title title">Our barbers</h2>
-                <ul class="barbers-list list">
-                    <li class="barbers-items">
+                <p class="barbers__pre-title pre-title">For true enjoyers of the atmosphere</p>
+                <h2 class="barbers__title title">Our barbers</h2>
+                <ul class="card-list list">
+                    <li class="card-list__items">
                         <img src="./img/our_barbers_1.jpg" alt="our barbers" width="370" height="346">
-                        <h3 class="barbers-name">John Smith</h3>
-                        <p class="barbers-info">Extreme Barber</p>
+                        <h3 class="card-list__name">John Smith</h3>
+                        <p class="card-list__info">Extreme Barber</p>
 
-                        <ul class="barbers-soc-list list">
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link">
-                                    <svg width="20" height="20" class="barbers-soc-icons">
+                        <ul class="social list">
+                            <li class="social__items"><a href="#" class="social__link link">
+                                    <svg width="20" height="20" class="social__icons">
                                         <use href="./img/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-twitter"></use>
                                     </svg></a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-facebook"></use>
                                     </svg></a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-linkedin"></use>
                                     </svg></a></li>
                         </ul>
                     </li>
-                    <li class="barbers-items">
+                    <li class="card-list__items">
                         <img src="./img/our_barbers_2.jpg" alt="our barbers" width="370" height="346">
-                        <h3 class="barbers-name">Michele Doe</h3>
-                        <p class="barbers-info">Extreme Barber</p>
-
-                        <ul class="barbers-soc-list list">
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link">
-                                    <svg width="20" height="20" class="barbers-soc-icons">
+                        <h3 class="card-list__name">Michele Doe</h3>
+                        <p class="card-list__info">Extreme Barber</p>
+                        <ul class="social list">
+                            <li class="social__items"><a href="#" class="social__link link">
+                                    <svg width="20" height="20" class="social__icons">
                                         <use href="./img/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-twitter"></use>
                                     </svg></a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-facebook"></use>
                                     </svg></a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-linkedin"></use>
                                     </svg></a></li>
                         </ul>
                     </li>
-                    <li class="barbers-items">
+                    <li class="card-list__items">
                         <img src="./img/our_barbers_3.jpg" alt="our barbers" width="370" height="346">
-                        <h3 class="barbers-name">Alan Black</h3>
-                        <p class="barbers-info">Extreme Barber</p>
+                        <h3 class="card-list__name">Alan Black</h3>
+                        <p class="card-list__info">Extreme Barber</p>
 
-                        <ul class="barbers-soc-list list">
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link">
-                                    <svg width="20" height="20" class="barbers-soc-icons">
+                        <ul class="social list">
+                            <li class="social__items"><a href="#" class="social__link link">
+                                    <svg width="20" height="20" class="social__icons">
                                         <use href="./img/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-twitter"></use>
                                     </svg></a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-facebook"></use>
                                     </svg></a></li>
-                            <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20"
-                                        height="20" class="barbers-soc-icons">
+                            <li class="social__items"><a href="#" class="social__link link"><svg width="20" height="20"
+                                        class="social__icons">
                                         <use href="./img/icons.svg#icon-linkedin"></use>
                                     </svg></a></li>
                         </ul>
