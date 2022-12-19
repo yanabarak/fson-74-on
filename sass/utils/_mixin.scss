@@ -4,3 +4,21 @@
   line-height: $lh / $fs;
   letter-spacing: $ls + em;
 }
+
+@mixin tel {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

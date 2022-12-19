@@ -1,6 +1,23 @@
 .barbers {
-  padding: 120px 0;
+  padding: 84px 0;
   background-color: #f7f7f7;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 120px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .barbers .container {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers .container {
+    width: 1200px;
+  }
 }
 .barbers__pre-title {
   color: #303030;
@@ -12,12 +29,20 @@
 }
 .card-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card-list__items {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 64px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 .card-list__name {

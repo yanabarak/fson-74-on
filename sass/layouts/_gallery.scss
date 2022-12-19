@@ -1,5 +1,12 @@
 .gallery {
-  padding: 120px 0;
+  padding: 84px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 120px 0;
+  }
 }
 .gallery-list {
   display: flex;
@@ -8,11 +15,23 @@
   margin-bottom: -30px;
 }
 .gallery-item {
-  width: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-bottom: 30px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 4);
+  }
 }
 .gallery-pre-title {
   color: #303030;
-  margin-bottom: 44px;
+  margin-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+  }
 }

@@ -1,5 +1,21 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 448px; //418 + 15 + 15
+  // }
+
+  @include tel {
+    width: 448px; //418 + 15 + 15
+  }
+
+  @include tablet {
+    width: 720px; //690 + 15 + 15
+  }
+
+  @include desktop {
+    width: 1200px; //1170 + 15 + 15
+  }
 }
