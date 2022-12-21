@@ -8,7 +8,9 @@ header {
     @extend %flex-align;
   }
 }
-
+.navigation {
+  display: none;
+}
 .navigation__list {
   display: flex;
 }
@@ -37,6 +39,7 @@ header {
 } */
 .connection {
   margin-left: auto;
+  display: none;
 }
 .connection__tel {
   font-weight: 600;
@@ -52,4 +55,81 @@ header {
 .connection__btn {
   color: #ffffff;
   margin-left: 40px;
+}
+
+.menu-open {
+  margin-left: auto;
+}
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transition: left 300ms, visibility 300ms;
+  & .container {
+    display: block;
+    height: 100%;
+  }
+  .is-hidden {
+    left: -100px;
+    right: auto;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+.mob-navigation-list > li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-navigation-link {
+  color: #303030;
+  @include font(18, 600, 25, 0.1);
+}
+.mob-navigation-link.current {
+  color: var(--accent-color);
+}
+.mob-connection-tel {
+  color: #303030;
+  @include font(18, 600, 25, 0.1);
+  display: block;
+  margin-bottom: 24px;
+}
+
+.mob-social-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 100px;
+  position: relative;
+  margin-top: 40px;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    background-color: #303030;
+    left: 0px;
+    top: 9px;
+  }
+}
+.mob-social-link-links {
+  @include font(14, 600, 19, 0.2);
+  color: #303030;
+}
+
+.menu-content {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
 }

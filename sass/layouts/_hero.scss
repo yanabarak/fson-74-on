@@ -1,9 +1,13 @@
 .social-link {
   width: 93px;
-  display: flex;
+  display: none;
   align-items: flex-end;
   padding-left: 23px;
   padding-bottom: 40px;
+
+  @include tablet {
+    display: flex;
+  }
 }
 .social-link__list {
   transform: rotate(-90deg) translate(-15px);
@@ -23,28 +27,58 @@
 
 .hero .container {
   display: flex;
+  padding: 0px;
 }
 .combination {
-  padding: 272px 0 206px 96px;
+  padding: 208px 31px 208px 31px;
   flex-grow: 1;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url('../img/hero_bg.jpg');
+    url('../img/hero_bg_mob.jpg');
+  @include retina {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url('../img/hero_bg_mob-2x.jpg');
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #303030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @include tablet {
+    padding: 270px 90px 270px 120px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url('../img/hero_bg_tab.jpg');
+    @include retina {
+      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url('../img/hero_bg_tab-2x.jpg');
+    }
+  }
+  @include desktop {
+    padding: 272px 0 206px 96px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url('../img/hero_bg.jpg');
+    @include retina {
+      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url('../img/hero_bg-2x.jpg');
+    }
+  }
 }
 .combination__pre-title {
   margin-bottom: var(--main-margin);
 }
 .combination__title {
   font-family: 'Raleway', sans-serif;
-  font-size: 72px;
+  font-size: 42px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--second-header-color);
   margin-bottom: var(--main-margin);
+
+  @include tel {
+    font-size: 48px;
+  }
+  @include desktop {
+    font-size: 72px;
+  }
 }
 /* .hero-title {
   display: flex;
@@ -63,11 +97,16 @@
   font-size: 90px;
 } */
 .combination__text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  max-width: 370px;
+  max-width: 336px;
+
+  @include tablet {
+    font-size: 18px;
+    max-width: 370px;
+  }
 }
 .social-link__links {
   font-weight: 600;
